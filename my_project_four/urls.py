@@ -19,9 +19,11 @@ from django.urls import path, include
 from six_day_plan import views as index_views
 from about import views as about_views
 from questionnaire.views import questionnaire
+from blog.views import gym_blog
 
 
 urlpatterns = [
+    path('blog/', gym_blog, name='blog'),
     path('questionnaire/', questionnaire, name='questionnaire'),
     path('about/', about_views.about, name = 'about'),
     path('', index_views.index, name = 'index'),
