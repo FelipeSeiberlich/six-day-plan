@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'six_day_plan',
     'about',
     'questionnaire',
+
 ]
 
 MIDDLEWARE = [
