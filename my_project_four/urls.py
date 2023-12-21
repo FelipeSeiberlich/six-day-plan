@@ -18,8 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 from six_day_plan import views as index_views
 from about import views as about_views
+from questionnaire.views import questionnaire
+
 
 urlpatterns = [
+    path('questionnaire/', questionnaire, name='questionnaire'),
     path('about/', about_views.about, name = 'about'),
     path('', index_views.index, name = 'index'),
     path('admin/', admin.site.urls),

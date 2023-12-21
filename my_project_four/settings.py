@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'six_day_plan',
     'about',
+    'questionnaire',
 ]
 
 MIDDLEWARE = [
