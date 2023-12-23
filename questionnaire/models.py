@@ -11,7 +11,7 @@ class Questionnaire(models.Model):
     age = models.IntegerField(null=True, blank=True)
     gender = models.CharField(choices=GENDER, max_length=25, null=True, blank=True)
     disability = models.CharField(choices=YES_OR_NO, max_length=3, null=False, blank=False)
-    previous_experience = models.CharField(choices=YES_OR_NO, max_length=3 null=False, blank=False)
+    previous_experience = models.CharField(choices=YES_OR_NO, max_length=3, null=False, blank=False)
     previous_training = models.CharField(choices=YES_OR_NO, null=False, blank=False)
     physicians_name = models.CharField(max_length=75, null=False, blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
