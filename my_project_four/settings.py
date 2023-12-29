@@ -41,10 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'six_day_plan',
-    'about',
     'questionnaire',
     'django_summernote',
     'blog',
+    'about',
 
 ]
 
