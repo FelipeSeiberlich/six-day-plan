@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
-{% block content %}
 {% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
 <div class="container mt-5">
   <div class="row">
     <div class="col-4 text-center">
@@ -18,7 +20,25 @@
       <!-- Updated on field goes in here -->
 
       <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
     </div>
-  </div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 my-5">
+            <h2>Contact me!</h2>
+            <p>Do you need any further information about our plans?
+              We will be glad to hear from you. Fill out this form and
+              one of our gym's expert associates will contact you shortly.
+            </p>
+
+            <!-- add your form here. Your submit button should 
+                                have the classes of btn, btn-secondary -->
+            <form method="post">
+              {{ contact_form | crispy }}
+              {% csrf_token %}
+              <button class="btn btn-secondary"
+              type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock content %}
