@@ -91,6 +91,10 @@ body {
     z-index: 100;
 }
 
+.pt-image{
+    width: 90%;
+}
+
 .post-link {
     text-decoration: none;
     color: #445261;
