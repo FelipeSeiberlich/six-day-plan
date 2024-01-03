@@ -27,6 +27,7 @@ class PostList(generic.ListView):
     template_name = "blog/index.html"
     paginate_by = 3
 
+
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
@@ -77,6 +78,7 @@ def post_detail(request, slug):
         
     )
 
+
 def comment_edit(request, slug, comment_id):
     """
     Display an individual comment for edit.
@@ -107,6 +109,7 @@ def comment_edit(request, slug, comment_id):
             messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 def comment_delete(request, slug, comment_id):
     """

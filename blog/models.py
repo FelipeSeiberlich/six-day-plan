@@ -4,6 +4,7 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Post(models.Model):
     """
     Stores a single blog post entry related to :model:`auth.User`.
@@ -24,6 +25,7 @@ class Post(models.Model):
     
     def __str__(self):
         return f"{self.title} | written by {self.author}"
+
 
 class Comment(models.Model):
     """
