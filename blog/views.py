@@ -7,6 +7,7 @@ from .forms import CommentForm
 
 # Create your views here.
 
+
 class PostList(generic.ListView):
     queryset = Post.objects.filter(author=1)
     template_name = "blog/index.html"

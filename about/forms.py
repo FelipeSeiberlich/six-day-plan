@@ -1,5 +1,6 @@
-from .models import ContactRequest
 from django import forms
+from .models import ContactRequest
+
 
 
 class ContactForm(forms.ModelForm):
