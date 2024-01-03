@@ -6,7 +6,15 @@ from .forms import ContactForm
 
 def about_six(request):
     """
-    Renders the About page
+    Renders the most recent information about the 6 DAY-PLAN and allow users to send contact request.
+    Display an individual instance of :model:`about.About`.
+    **Context**
+    ``about``
+        The most recent instance of :model:`about.About`.
+    ``contact_form``
+        An instance of :form: ``about.ContactForm``.
+    **Template:**
+        :template: ``about.about.html``.
     """
     if request.method == "POST":
         contact_form = ContactForm(data=request.POST)
