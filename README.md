@@ -1,14 +1,11 @@
 # [SIX DAY PLAN](https://six-day-plan-69b095ce02e7.herokuapp.com)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
-
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
+The 6 DAY-PLAN website is 100% committed to helping you get the best fitness, weight loss, and body-shaping results.
+This highly successful personal training plan includes everything you need to lose weight, tone-up, get fit,
+build muscle….and stay healthy.
+Our intention is helping users to create self awareness of the importance of including exercises in their daily routine
+while we optimize, schedule and organize your trainning.
+This 6 days with us will change your way of experiencing fitness!
 
 Consider adding a mockup image using the "Am I Responsive" website.
 Here's your deployed site as an example:
